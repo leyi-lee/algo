@@ -28,7 +28,13 @@ func main()  {
 	//fmt.Println(result)
 	//
 	//fmt.Println(13/5)
-	heights := []int{2,1,5,6,2,3}
-	max := stack.LargestRectangleArea(heights)
+
+
+	//heights := []int{2,1,5,6,2,3}
+	//max := stack.LargestRectangleArea(heights)
+	//fmt.Println(max)
+
+	heights := []int{4,2,0,3,2,5}
+	max := stack.Trap(heights)
 	fmt.Println(max)
 }
