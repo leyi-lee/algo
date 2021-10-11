@@ -17,6 +17,7 @@ func LargestRectangleArea(heights []int) int {
 		for len(s) > 0 && s[len(s)-1].Height > height {
 			defaultWidth += s[len(s)-1].Width
 			newRect := defaultWidth * s[len(s)-1].Height // 出错！！！计算的是栈顶的高度
+			//fmt.Println(newRect)
 			if newRect >= max {
 				max = newRect
 			}
