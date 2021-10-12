@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"myAlgo/stack"
 )
 
 func main()  {
@@ -35,7 +34,9 @@ func main()  {
 	//fmt.Println(max)
 
 	//heights := []int{0,1,0,2,1,0,1,3,2,1,2,1}
-	heights := []int{4,2,0,3,2,5}
-	max := stack.Trap(heights)
-	fmt.Println(max)
+	//heights := []int{4,2,0,3,2,5}
+	//max := stack.Trap(heights)
+	//fmt.Println(max)
+	s := "stst"
+	fmt.Println(string(s[1]))
 }
