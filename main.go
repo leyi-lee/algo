@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"myAlgo/week01"
 )
 
 func main()  {
@@ -37,6 +38,12 @@ func main()  {
 	//heights := []int{4,2,0,3,2,5}
 	//max := stack.Trap(heights)
 	//fmt.Println(max)
-	s := "stst"
-	fmt.Println(string(s[1]))
+	//s := "stst"
+	//fmt.Println(string(s[1]))
+	//matrix := [][]byte{{"1","0","1","0","0"},{"1","0","1","1","1"},{"1","1","1","1","1"},{"1","0","0","1","0"}}
+	matrix := [][]byte{{48,49},{49,48}}
+	max := week01.MaximalRectangle(matrix)
+	fmt.Println(max, []byte("1"))
+	//a := []int{1}
+	//a[0]= 2
 }

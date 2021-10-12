@@ -1,7 +1,5 @@
 package stack
 
-import "fmt"
-
 type rect struct {
 	Width int
 	Height int
@@ -26,7 +24,7 @@ func LargestRectangleArea(heights []int) int {
 
 		// 出错 ！！！ defaultWidth + 1  为什么这要加一，就是你要开始计算或者合并柱状图时，最后入栈的要加上破坏单调递增的那个宽度
 		s = append(s, rect{Width: defaultWidth+1, Height: height})
-		fmt.Println(s)
+		//fmt.Println(s)
 	}
 
 	return max
