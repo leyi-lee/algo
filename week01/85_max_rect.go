@@ -1,9 +1,6 @@
 package week01
 
-import (
-	"fmt"
-	"myAlgo/stack"
-)
+import "strconv"
 
 // 主要思想单调栈求最大值
 func MaximalRectangle(matrix [][]byte) int {
@@ -17,27 +14,50 @@ func MaximalRectangle(matrix [][]byte) int {
 	heights := []int{}
 	for row := 0; row < mLen; row++ { // 遍历数量直接取值（不直接遍历matrix）
 		for col := 0; col < itemLen; col++ {
-			isNotAppend := len(heights) != 0 && len(heights)-1 >= col
+			if row == 0 {
+				colInt, _ := strconv.Atoi(string(matrix[row][col]))
+				heights = append(heights, colInt)
+				continue
+			}
+			//isNotAppend := len(heights) != 0 && len(heights)-1 >= col // 判断底是否有了，其实就是遍历的第一行
 
-			if string(matrix[row][col]) == "1" {
-				if isNotAppend {
-					heights[col] += 1
-				} else {
-					heights = append(heights, 1)
-				}
+			if string(matrix[row][col]) == "1" { // 如果为1 在基础上加一
+				heights[col] += 1
 			} else {
-				if isNotAppend {
-					heights[col] = 0
-				} else {
-					heights = append(heights, 0)
-				}
+				heights[col] = 0
 			}
 		}
-		newRect := stack.LargestRectangleArea(heights)
-		fmt.Println(heights, newRect)
+		newRect := largestRectArea(heights)
 		if newRect > max {
 			max = newRect
 		}
 	}
+	return max
+}
+
+// 重写 柱形图最大矩形
+type rect struct {
+	Width int
+	Height int
+}
+
+func largestRectArea(heights []int) int {
+	max := 0
+	s := []rect{}
+	heights = append(heights, 0)
+	for _, height := range heights {
+		defaultWidth := 0
+		if len(s) > 0 && s[len(s)-1].Height >= height { // 栈顶大于后插入的柱子高度开始计算
+			defaultWidth += s[len(s) - 1].Width
+			newRect := defaultWidth * s[len(s) - 1].Height
+			if newRect > max {
+				max = newRect
+			}
+			s = s[:len(s) -1]
+		}
+
+		s = append(s, rect{defaultWidth + 1, height})
+	}
+
 	return max
 }
