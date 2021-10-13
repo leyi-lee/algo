@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"myAlgo/hash"
-)
-
 func main()  {
 	//a := []int{9,9,8,3}
 	//fmt.Println(week01.PlusOne(a))
@@ -50,5 +45,6 @@ func main()  {
 	//n := 2
 	//fmt.Println(queue.MaxSlidingWindow(nums, k))
 	//fmt.Println(queue.MaxSlidingWindowSlide(nums, k, n))
-	fmt.Println(hash.TwoSum([]int{3,2,4}, 6))
+	//fmt.Println(hash.TwoSum([]int{3,2,4}, 6))
+	//fmt.Println(PrefixSum.NumberOfSubArrays([]int{2,2,2,1,2,2,1,2,2,2}, 2))
 }

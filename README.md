@@ -8,6 +8,7 @@
     * [柱状图中最大矩形](./stack/monotonousStack.go)
     * [接雨水](./stack/trap.go)
     * [后缀计算器](./stack/stack.go)
+    * [统计优美子数组](./PrefixSum/numberOfSubarrays.go)
 
 * [第一周作业](./week01)
     * [合并有序链表](./week01/mergeTwoLists.go)
