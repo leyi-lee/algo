@@ -1,5 +1,10 @@
 package PrefixSum
 
+/**
+1248
+https://leetcode-cn.com/problems/count-number-of-nice-subarrays/
+ */
+
 func NumberOfSubArrays(nums []int, k int) int {
 	ans := 0
 
