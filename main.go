@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"myAlgo/queue"
+	"myAlgo/hash"
 )
 
 func main()  {
@@ -43,11 +43,12 @@ func main()  {
 	//matrix := [][]byte{{49,48,49,48,48},{49,48,49,49,49},{49,49,49,49,49},{49,48,48,49,48}}
 	//max := week01.MaximalRectangle(matrix)
 	//fmt.Println(max, []byte("1"))
-	nums := []int{1,3,-1,-3,5,3,6,7}
+	//nums := []int{1,3,-1,-3,5,3,6,7}
 	// 3 5 5
-	k := 3
+	//k := 3
 
-	n := 2
+	//n := 2
 	//fmt.Println(queue.MaxSlidingWindow(nums, k))
-	fmt.Println(queue.MaxSlidingWindowSlide(nums, k, n))
+	//fmt.Println(queue.MaxSlidingWindowSlide(nums, k, n))
+	fmt.Println(hash.TwoSum([]int{3,2,4}, 6))
 }
