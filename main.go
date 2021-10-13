@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"myAlgo/week01"
+	"myAlgo/queue"
 )
 
 func main()  {
@@ -40,10 +40,14 @@ func main()  {
 	//fmt.Println(max)
 	//s := "stst"
 	//fmt.Println(string(s[1]))
-	//matrix := [][]byte{{"1","0","1","0","0"},{"1","0","1","1","1"},{"1","1","1","1","1"},{"1","0","0","1","0"}}
-	matrix := [][]byte{{49,48,49,48,48},{49,48,49,49,49},{49,49,49,49,49},{49,48,48,49,48}}
-	max := week01.MaximalRectangle(matrix)
-	fmt.Println(max, []byte("1"))
-	//a := []int{1}
-	//a[0]= 2
+	//matrix := [][]byte{{49,48,49,48,48},{49,48,49,49,49},{49,49,49,49,49},{49,48,48,49,48}}
+	//max := week01.MaximalRectangle(matrix)
+	//fmt.Println(max, []byte("1"))
+	nums := []int{1,3,-1,-3,5,3,6,7}
+	// 3 5 5
+	k := 3
+
+	n := 2
+	//fmt.Println(queue.MaxSlidingWindow(nums, k))
+	fmt.Println(queue.MaxSlidingWindowSlide(nums, k, n))
 }
