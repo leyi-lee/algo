@@ -5,6 +5,13 @@ package PrefixSum
 https://leetcode-cn.com/problems/count-number-of-nice-subarrays/
  */
 
+/**
+先求出前缀和
+因为s[j] = s[i] - k
+所以要统计s[j] 的个数 （统计前缀和值的次数）
+然后只要满足s[i] - k 命中就把前缀和值的次数累加一起
+ */
+
 func NumberOfSubArrays(nums []int, k int) int {
 	ans := 0
 

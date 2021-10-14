@@ -6,6 +6,16 @@ package week01
 https://leetcode-cn.com/problems/design-circular-deque/
  */
 
+/**
+需要注意
+在数组k 长度上+1 存放tail
+head 如果在头部插入，正常是 head-1，可能越界 head = (head-1 + len(d)) %  len(d)
+tail 如果在尾部插入，正常是tail+1 ，可能越界 tail = (tail+1) % len(d)
+
+相反如果双端队列的话，删除队尾也需要tail-1 防止越界
+ */
+
+
 type MyCircularDeque struct {
 	arr []int
 	head int
