@@ -1,5 +1,9 @@
 package stack
 
+/**
+42
+https://leetcode-cn.com/problems/trapping-rain-water/
+ */
 func Trap(heights []int) int { // 错误！！ 接雨水
 	max := 0
 	s := []rect{}

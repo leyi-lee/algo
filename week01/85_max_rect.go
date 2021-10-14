@@ -2,6 +2,11 @@ package week01
 
 import "strconv"
 
+/**
+85
+https://leetcode-cn.com/problems/maximal-rectangle/
+ */
+
 // 主要思想单调栈求最大值
 func MaximalRectangle(matrix [][]byte) int {
 	max := 0

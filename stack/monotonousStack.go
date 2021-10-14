@@ -1,5 +1,10 @@
 package stack
 
+/**
+84
+https://leetcode-cn.com/problems/largest-rectangle-in-histogram/
+ */
+
 type rect struct {
 	Width int
 	Height int
