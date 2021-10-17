@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"myAlgo/week02"
+)
 
 func main()  {
 	//a := []int{9,9,8,3}
@@ -50,6 +53,23 @@ func main()  {
 	//fmt.Println(hash.TwoSum([]int{3,2,4}, 6))
 	//fmt.Println(PrefixSum.NumberOfSubArrays([]int{2,2,2,1,2,2,1,2,2,2}, 2))
 
-	a := make([]int, 10)
-	fmt.Println(len(a), cap(a))
+	//b := 10
+	//a := make([][10]int, b)
+	//fmt.Println(a[0][0])
+	//fmt.Println(len(a), cap(a))
+	/**
+		1 1 1 1    1,2,3,4
+		1 1 1 1	   2,4,6,8
+		1 1 1 1	   3,6,9,12
+	 */
+	//sums := PrefixSum.TwoDimPreSum([][]int{{1,1,1,1},{1,1,1,1},{1,1,1,1}})
+	//fmt.Println(sums[3][4])
+
+	//sums := PrefixSum.TwoDimPreDiff([][]int{{1,1,1,1},{1,1,1,1},{1,1,1,1}})
+	//fmt.Println(sums[3][4])
+
+	//fmt.Println(PrefixSum.PreDiff([]int{1,2,3,4,5,6}))
+	matrix := [][]int{{0,1,0},{1,1,1},{0,1,0}}
+	result := week02.NumSubmatrixSumTarget(matrix, 0)
+	fmt.Println(result)
 }
