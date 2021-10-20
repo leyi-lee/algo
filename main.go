@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"myAlgo/week02"
 )
 
@@ -69,7 +68,56 @@ func main()  {
 	//fmt.Println(sums[3][4])
 
 	//fmt.Println(PrefixSum.PreDiff([]int{1,2,3,4,5,6}))
-	matrix := [][]int{{0,1,0},{1,1,1},{0,1,0}}
-	result := week02.NumSubmatrixSumTarget(matrix, 0)
-	fmt.Println(result)
+	//matrix := [][]int{{0,1,0},{1,1,1},{0,1,0}}
+	//result := week02.NumSubmatrixSumTarget(matrix, 0)
+	//fmt.Println(result)
+
+	//a := []int{1,2,0,4,5,1,2,3}
+	//
+	//pre := 0
+	//k := 12
+	//sums := map[int]int{0:1}
+	//ans := 0
+	//for i:=1;i <= len(a);i++ {
+	//	pre += a[i - 1]
+	//	if _, ok := sums[pre-k];ok {
+	//		ans += sums[pre-k]
+	//	}
+	//
+	//	sums[pre] += 1
+	//}
+	//fmt.Println(sums)
+	//fmt.Println(ans)
+
+	lru := week02.Constructor(2)
+	// [[2],[2],[2,6],[1],[1,5],[1,2],[1],[2]]
+	lru.Get(2)
+	lru.Put(2,6)
+
+	lru.Get(1)
+
+	lru.Put(1,5)
+
+	lru.Put(1,2)
+
+	lru.Get(1)
+	lru.Get(2)
+	lru.Print()
+
+
+
+	//lru.Print()
+
+
+	//fmt.Println(lru.Get(2))
+
+	//lru.Put(4,4)
+	//
+	//lru.Get(1)
+	//
+	//lru.Get(3)
+	//lru.Get(4)
+
+	//lru.Print()
+
 }
