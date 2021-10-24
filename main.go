@@ -1,7 +1,7 @@
 package main
 
 import (
-	"myAlgo/week02"
+	"myAlgo/week03"
 )
 
 func main()  {
@@ -89,20 +89,20 @@ func main()  {
 	//fmt.Println(sums)
 	//fmt.Println(ans)
 
-	lru := week02.Constructor(2)
+	//lru := week02.Constructor(2)
 	// [[2],[2],[2,6],[1],[1,5],[1,2],[1],[2]]
-	lru.Get(2)
-	lru.Put(2,6)
-
-	lru.Get(1)
-
-	lru.Put(1,5)
-
-	lru.Put(1,2)
-
-	lru.Get(1)
-	lru.Get(2)
-	lru.Print()
+	//lru.Get(2)
+	//lru.Put(2,6)
+	//
+	//lru.Get(1)
+	//
+	//lru.Put(1,5)
+	//
+	//lru.Put(1,2)
+	//
+	//lru.Get(1)
+	//lru.Get(2)
+	//lru.Print()
 
 
 
@@ -119,5 +119,8 @@ func main()  {
 	//lru.Get(4)
 
 	//lru.Print()
+	inorder := []int{9,3,15,20,7}
+	postorder := []int{9,15,7,20,3}
+	week03.BuildTree(inorder, postorder)
 
 }
