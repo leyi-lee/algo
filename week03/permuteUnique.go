@@ -2,9 +2,15 @@ package week03
 
 import "sort"
 
+/**
+全排列
+https://leetcode-cn.com/problems/permutations-ii/
+ */
+
 var ans [][]int
 var used []bool
 var chosen []int
+
 
 func permuteUnique(nums []int) [][]int {
 	sort.Ints(nums) // 先排序把相同的值放一起
