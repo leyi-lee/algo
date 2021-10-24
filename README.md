@@ -24,3 +24,4 @@
 * [第三周作业](./week03)
     * [从中序与后序遍历序列构造二叉树](./week03/buildTree.go)
     * [全排列II](./week03/permuteUnique.go)
+    * [课程表II](./week03/findOrder.go)

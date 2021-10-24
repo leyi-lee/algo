@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"myAlgo/week03"
 )
 
@@ -119,8 +120,10 @@ func main()  {
 	//lru.Get(4)
 
 	//lru.Print()
-	inorder := []int{9,3,15,20,7}
-	postorder := []int{9,15,7,20,3}
-	week03.BuildTree(inorder, postorder)
-
+	//inorder := []int{9,3,15,20,7}
+	//postorder := []int{9,15,7,20,3}
+	//week03.BuildTree(inorder, postorder)
+	prerequisites := [][]int{{1,0},{1,2},{0,1}}
+	result := week03.FindOrder(3, prerequisites)
+	fmt.Println(result)
 }
