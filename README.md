@@ -22,5 +22,5 @@
     * [数组的度](./week02/findShortestSubArray.go)
     * [元素和为目标值的子矩阵数量](./week02/numSubmatrixSumTarget.go)
 * [第三周作业](./week03)
-    *[从中序与后序遍历序列构造二叉树](./week03/buildTree.go)
-    *[全排列II](./week03/permuteUnique.go)
+    * [从中序与后序遍历序列构造二叉树](./week03/buildTree.go)
+    * [全排列II](./week03/permuteUnique.go)
