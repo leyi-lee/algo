@@ -26,4 +26,5 @@
     * [全排列II](./week03/permuteUnique.go)
     * [课程表II](./week03/findOrder.go)
 * [第四周作业](./week04)
-    * [被围绕的区域](./week04/solve.go)
+    * [被围绕的区域-BFS](./week04/solve.go)
+    * [被围绕的区域-DFS](./week04/solveDfs.go)
