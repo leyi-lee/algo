@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"myAlgo/week03"
-)
-
 func main()  {
 	//a := []int{9,9,8,3}
 	//fmt.Println(week01.PlusOne(a))
@@ -123,7 +118,10 @@ func main()  {
 	//inorder := []int{9,3,15,20,7}
 	//postorder := []int{9,15,7,20,3}
 	//week03.BuildTree(inorder, postorder)
-	prerequisites := [][]int{{1,0},{1,2},{0,1}}
-	result := week03.FindOrder(3, prerequisites)
-	fmt.Println(result)
+	//prerequisites := [][]int{{1,0},{1,2},{0,1}}
+	//result := week03.FindOrder(3, prerequisites)
+	//fmt.Println(result)
+	//s := "23"
+	//a := s[:len(s) - 1]
+	//fmt.Println(s, string(s[1]), len(s), a)
 }

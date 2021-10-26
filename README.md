@@ -25,3 +25,5 @@
     * [从中序与后序遍历序列构造二叉树](./week03/buildTree.go)
     * [全排列II](./week03/permuteUnique.go)
     * [课程表II](./week03/findOrder.go)
+* [第四周作业](./week04)
+    * [被围绕的区域](./week04/solve.go)
