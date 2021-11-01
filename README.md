@@ -29,3 +29,5 @@
     * [被围绕的区域-BFS](./week04/solve.go)
     * [被围绕的区域-DFS](./week04/solveDfs.go)
     * [把二叉搜索树转换为累加树](./week04/convertBST.go)
+* [第五周作业](./week05)
+    * [寻找旋转排序数组中的最小值 II](./week05/findMin.go)
