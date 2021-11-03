@@ -31,3 +31,5 @@
     * [把二叉搜索树转换为累加树](./week04/convertBST.go)
 * [第五周作业](./week05)
     * [寻找旋转排序数组中的最小值 II](./week05/findMin.go)
+    * [在 D 天内送达包裹的能力](./week05/shipWithinDays.go)
+    * [爱吃香蕉的珂珂](./week05/minEatingSpeed.go)

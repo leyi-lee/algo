@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"myAlgo/week05"
+)
+
 func main()  {
 	//a := []int{9,9,8,3}
 	//fmt.Println(week01.PlusOne(a))
@@ -124,4 +129,9 @@ func main()  {
 	//s := "23"
 	//a := s[:len(s) - 1]
 	//fmt.Println(s, string(s[1]), len(s), a)
+
+	piles := []int{1000000000}
+	H := 2
+	a := week05.MinEatingSpeed(piles, H)
+	fmt.Println(a)
 }
