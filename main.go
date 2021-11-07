@@ -130,8 +130,13 @@ func main()  {
 	//a := s[:len(s) - 1]
 	//fmt.Println(s, string(s[1]), len(s), a)
 
-	piles := []int{1000000000}
-	H := 2
-	a := week05.MinEatingSpeed(piles, H)
-	fmt.Println(a)
+	//piles := []int{1000000000}
+	//H := 2
+	//a := week05.MinEatingSpeed(piles, H)
+	//fmt.Println(a)
+	//nums := []int{2,4,5,1,3}
+	//dsort.MergeSort(nums, 0, 4)
+	//fmt.Println(nums)
+	nums := [][]int{{1,3,5,7},{10,11,16,20},{23,30,34,60}}
+	fmt.Println(week05.SearchMatrix(nums, 3))
 }

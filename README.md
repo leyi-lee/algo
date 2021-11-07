@@ -33,3 +33,4 @@
     * [寻找旋转排序数组中的最小值 II](./week05/findMin.go)
     * [在 D 天内送达包裹的能力](./week05/shipWithinDays.go)
     * [爱吃香蕉的珂珂](./week05/minEatingSpeed.go)
+    * [搜索二维矩阵](./week05/searchMatrix.go)
