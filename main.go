@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"myAlgo/week05"
+	"math"
 )
 
 func main()  {
@@ -129,7 +129,6 @@ func main()  {
 	//s := "23"
 	//a := s[:len(s) - 1]
 	//fmt.Println(s, string(s[1]), len(s), a)
-
 	//piles := []int{1000000000}
 	//H := 2
 	//a := week05.MinEatingSpeed(piles, H)
@@ -137,6 +136,14 @@ func main()  {
 	//nums := []int{2,4,5,1,3}
 	//dsort.MergeSort(nums, 0, 4)
 	//fmt.Println(nums)
-	nums := [][]int{{1,3,5,7},{10,11,16,20},{23,30,34,60}}
-	fmt.Println(week05.SearchMatrix(nums, 3))
+	//nums := [][]int{{1,3,5,7},{10,11,16,20},{23,30,34,60}}
+	//fmt.Println(week05.SearchMatrix(nums, 3))
+	//nums := []int{1,0,-1,0,-2,2}
+	//target := 0
+	//recur.FourSum(nums, target)
+	//nums := []int{1,0,-1,0,-2,2}
+	//a := twoPoint.RemoveElement(nums, 1)
+	//fmt.Println(nums,a)
+
+	fmt.Println(math.Round(29/2))
 }

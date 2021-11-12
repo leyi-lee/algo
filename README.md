@@ -34,3 +34,7 @@
     * [在 D 天内送达包裹的能力](./week05/shipWithinDays.go)
     * [爱吃香蕉的珂珂](./week05/minEatingSpeed.go)
     * [搜索二维矩阵](./week05/searchMatrix.go)
+* [第六周作业](./week06)
+    * [爬楼梯](./week06/climbStairs.go)
+    * [三角形最小路径和](./week06/minimumTotal.go)
+    * [最长递增子序列的个数](./week06/findNumberOfLIS.go)   
