@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
-
 func main()  {
 	//a := []int{9,9,8,3}
 	//fmt.Println(week01.PlusOne(a))
@@ -141,9 +136,30 @@ func main()  {
 	//nums := []int{1,0,-1,0,-2,2}
 	//target := 0
 	//recur.FourSum(nums, target)
-	//nums := []int{1,0,-1,0,-2,2}
+	//nums := []int{1,1,1,1}
+	//nums := make([]int, 2, 5)
+	//nums[1] =  1
+	//fmt.Println(len(nums),cap(nums), nums[1])
+	//nums = append(nums, 1)
+	//fmt.Println(len(nums),cap(nums))
+	//
+	//nums = append(nums, 1)
+	//fmt.Println(len(nums),cap(nums))
+
+
+	//mapa := make(map[string]int, 2)
+	//mapa["aaa"] = 1
+	//mapa["bbb"] = 2
+	//mapa["ccc"] = 2
+	//fmt.Println(mapa, len(mapa))
 	//a := twoPoint.RemoveElement(nums, 1)
 	//fmt.Println(nums,a)
 
-	fmt.Println(math.Round(29/2))
+	//fmt.Println(math.Round(29/2))
+
+	//prices := []int{7,1,5,3,6,4}
+	//profit := dp.MaxProfit(prices)
+	//fmt.Println(profit)
+
+
 }

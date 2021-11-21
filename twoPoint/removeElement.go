@@ -1,6 +1,9 @@
 package twoPoint
 
-import "sort"
+import (
+	"fmt"
+	"sort"
+)
 
 func RemoveElement(nums []int, target int) int {
 	slowIndex := 0
@@ -82,4 +85,23 @@ func FourSum(nums []int, target int) [][]int {
 		}
 	}
 	return ans
+}
+
+func SortArrRemove() {
+	nums := []int{1,1,1,2,2,3,4,4,5,6}
+	sort.Ints(nums)
+	n := len(nums)
+
+	k := 0
+	m := 0
+	for i := k + 1; i < n; i++ {
+		if k - m >= 0 && nums[k - m] == nums[i] {
+			continue
+		}
+
+		nums[k + 1] = nums[i]
+		k++
+	}
+
+	fmt.Println(nums[:k + 1])
 }
