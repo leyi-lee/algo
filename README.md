@@ -42,3 +42,6 @@
     * [完全平方和](./week07/numSquares.go)
     * [跳跃游戏](./week07/canJump.go)
     * [跳跃游戏II](./week07/jump.go) 
+* [第八周作业](./week08)
+    * [冗余连接](./week08/findRedundantConnection.go)
+    * [岛屿数量](./week08/numIslands.go)

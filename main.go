@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"myAlgo/week08"
+)
+
 func main()  {
 	//a := []int{9,9,8,3}
 	//fmt.Println(week01.PlusOne(a))
@@ -161,5 +166,11 @@ func main()  {
 	//profit := dp.MaxProfit(prices)
 	//fmt.Println(profit)
 
+	week08.Construct(5)
+	week08.Merge(1,2)
+	week08.Merge(2,3)
+	week08.Merge(3,4)
 
+	week08.Find(1)
+	fmt.Println(week08.Fa)
 }
