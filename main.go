@@ -3,7 +3,13 @@ package main
 import (
 	"fmt"
 	"myAlgo/week08"
+	"strings"
 )
+
+
+type User struct {
+	Name *string
+}
 
 func main()  {
 	//a := []int{9,9,8,3}
@@ -173,4 +179,27 @@ func main()  {
 
 	week08.Find(1)
 	fmt.Println(week08.Fa)
+	strings.ToLower("HHH")
+
+	name := "name1"
+	name2 := &name
+
+	fmt.Println(*name2)
+
+	//users := make([]*User, 5)
+	//for _,s := range users {
+		//s.Name = "aaa"
+
+	//}
+
+	//fmt.Println(users)
+
+	aaa := make([]string, 1)
+	aaa[0] = "ss"
+
+	user := User{
+		Name: &aaa[0],
+	}
+
+	fmt.Println(user)
 }
