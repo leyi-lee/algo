@@ -1,11 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"myAlgo/week08"
-	"strings"
-)
-
+import "fmt"
 
 type User struct {
 	Name *string
@@ -172,19 +167,19 @@ func main()  {
 	//profit := dp.MaxProfit(prices)
 	//fmt.Println(profit)
 
-	week08.Construct(5)
-	week08.Merge(1,2)
-	week08.Merge(2,3)
-	week08.Merge(3,4)
-
-	week08.Find(1)
-	fmt.Println(week08.Fa)
-	strings.ToLower("HHH")
-
-	name := "name1"
-	name2 := &name
-
-	fmt.Println(*name2)
+	//week08.Construct(5)
+	//week08.Merge(1,2)
+	//week08.Merge(2,3)
+	//week08.Merge(3,4)
+	//
+	//week08.Find(1)
+	//fmt.Println(week08.Fa)
+	//strings.ToLower("HHH")
+	//
+	//name := "name1"
+	//name2 := &name
+	//
+	//fmt.Println(*name2)
 
 	//users := make([]*User, 5)
 	//for _,s := range users {
@@ -194,12 +189,56 @@ func main()  {
 
 	//fmt.Println(users)
 
-	aaa := make([]string, 1)
-	aaa[0] = "ss"
+	//fmt.Println(week09.Violence("aaac", "ac"))
+	//fmt.Println(week09.Kmp("aaac", "ac"))
 
-	user := User{
-		Name: &aaa[0],
+
+	//for i,j := 1,0; i < m; i++ {
+	//	for j > 0 && t[i] != t[j] {
+	//		j = next[j - 1]
+	//	}
+	//	if t[i] == t[j] {
+	//		j++
+	//	}
+	//	next[i] = j
+	//}
+	// agctagcagctagctg
+	// 0123456789
+	//t := "agctagcagctagctg"
+	//m := len(t)
+	//next := make([]int, m)
+	//for i := 1; i < m; i ++ {
+	//	k := next[i - 1]
+	//	for t[i] != t[k] && k != 0 {
+	//		k = next[k - 1]
+	//	}
+	//	if t[i] == t[k] {
+	//		next[i] = k + 1
+	//	} else {
+	//		next[i] = 0
+	//	}
+	//}
+	//
+	//fmt.Println(next)
+
+
+	t := "fsdfsdfsdf"
+	m := len(t)
+	next := make([]int, m)
+
+	for i := 1; i < m; i++ {
+		k := next[i - 1]
+		for t[k] != t[i] && k != 0 {
+			k = next[k - 1]
+		}
+
+		if t[k] == t[i] {
+			next[i] = k + 1
+		} else {
+			next[i] = 0
+		}
 	}
 
-	fmt.Println(user)
+	fmt.Println(next)
+
 }

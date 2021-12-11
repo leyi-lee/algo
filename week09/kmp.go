@@ -1,6 +1,6 @@
 package week09
 
-func kmp(s string, t string) int {
+func Kmp(s string, t string) int {
 	if t == " " {
 		return 0
 	}
@@ -20,6 +20,7 @@ func kmp(s string, t string) int {
 		next[i] = j
 	}
 
+
 	for i, j := 0,0; i < n; i++ {
 		for j > 0 && t[j] != s[i] {
 			j = next[j - 1]
@@ -35,4 +36,31 @@ func kmp(s string, t string) int {
 	}
 
 	return -1
+}
+
+
+func Violence(s string, t string) []int {
+	n := len(s)
+	m := len(t)
+
+	ans := make([]int, 0)
+	for i := 0; i < n - m + 1; i++ {
+		w := i
+		j := 0
+
+		for j < m - 1 {
+			if s[w] == t[j] {
+				w++
+				j++
+			} else {
+				break
+			}
+		}
+
+		if s[w] == t[j] {
+			ans = append(ans, i)
+		}
+	}
+
+	return ans
 }
