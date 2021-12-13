@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+	"strings"
+)
 
 type User struct {
 	Name *string
@@ -222,23 +226,60 @@ func main()  {
 	//fmt.Println(next)
 
 
-	t := "fsdfsdfsdf"
-	m := len(t)
-	next := make([]int, m)
+	//t := "fsdfsdfsdf"
+	//m := len(t)
+	//next := make([]int, m)
+	//
+	//for i := 1; i < m; i++ {
+	//	k := next[i - 1]
+	//	for t[k] != t[i] && k != 0 {
+	//		k = next[k - 1]
+	//	}
+	//
+	//	if t[k] == t[i] {
+	//		next[i] = k + 1
+	//	} else {
+	//		next[i] = 0
+	//	}
+	//}
+	//
+	//fmt.Println(next)
 
-	for i := 1; i < m; i++ {
-		k := next[i - 1]
-		for t[k] != t[i] && k != 0 {
-			k = next[k - 1]
-		}
+	var n string
+	var s string
+	fmt.Scanln(&n)
+	fmt.Scanln(&s)
 
-		if t[k] == t[i] {
-			next[i] = k + 1
-		} else {
-			next[i] = 0
+	fmt.Println(n, "11111111")
+	fmt.Println(s, "22222222222")
+	arrS := strings.Split(s, " ")
+	nums := make([]int, len(arrS))
+	for i, v := range arrS {
+		iv,_ := strconv.Atoi(v)
+		nums[i] = iv
+	}
+	fmt.Println(nums)
+	//fmt.Println(ironTower(8, []int{1 9 9 4 1 2 2 9}))
+}
+
+func ironTower(n int, nums []int) int {
+	sum := make([]int, n + 1)
+	sum[0] = 0
+
+	for i := 1; i <= n; i++ {
+		sum[i] = sum[i - 1] + nums[i - 1]
+	}
+	f := make([]int, n + 1)
+	last := make([]int, n + 1)
+
+	for i := 1; i <= n; i++ {
+		for j := 0; j < i; j++ {
+			if sum[i] - sum[j] >= last[j] {
+				f[i] = f[j] + 1
+				last[i] = sum[i] - sum[j]
+			}
 		}
 	}
-
-	fmt.Println(next)
+	return n - f[n]
 
 }
