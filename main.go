@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-	"strconv"
-	"strings"
+	_0211213 "myAlgo/review/20211213"
 )
 
 type User struct {
@@ -245,41 +244,36 @@ func main()  {
 	//
 	//fmt.Println(next)
 
-	var n string
-	var s string
-	fmt.Scanln(&n)
-	fmt.Scanln(&s)
+	//var a int
+	//var b string
+	//for {
+	//	n, _ := fmt.Scan(&a, &b)
+	//	if n == 0 {
+	//		break
+	//	} else {
+	//		fmt.Println(b)
+	//		arrS := strings.Split(b, " ")
+	//		nums := make([]int, len(arrS))
+	//		for i, v := range arrS {
+	//			iv,_ := strconv.Atoi(v)
+	//			nums[i] = iv
+	//		}
+	//		fmt.Println(nums)
+	//		//[]int{1,9, 9, 4, 1, 2, 2, 9}
+	//		fmt.Println(ironTower(a, nums))
+	//	}
+	//}
 
-	fmt.Println(n, "11111111")
-	fmt.Println(s, "22222222222")
-	arrS := strings.Split(s, " ")
-	nums := make([]int, len(arrS))
-	for i, v := range arrS {
-		iv,_ := strconv.Atoi(v)
-		nums[i] = iv
-	}
-	fmt.Println(nums)
-	//fmt.Println(ironTower(8, []int{1 9 9 4 1 2 2 9}))
+	//nums := []int{5,4,6,2,7,1}
+	fmt.Println(_0211213.BubbleSort([]int{5,4,6,2,7,1}))
+	//_0211213.MergeSort(nums, 0, 5)
+	//fmt.Println(_0211213.InsertSort(nums))
+	//_0211213.QuickSort(nums, 0, 5)
+	//fmt.Println(nums)
+
+
+
+	//tree := _0211213.NewTreeArr([]int{1,2,3,4,5,6,7,8,9})
+	//fmt.Println(tree.SumPrefix(3))
 }
 
-func ironTower(n int, nums []int) int {
-	sum := make([]int, n + 1)
-	sum[0] = 0
-
-	for i := 1; i <= n; i++ {
-		sum[i] = sum[i - 1] + nums[i - 1]
-	}
-	f := make([]int, n + 1)
-	last := make([]int, n + 1)
-
-	for i := 1; i <= n; i++ {
-		for j := 0; j < i; j++ {
-			if sum[i] - sum[j] >= last[j] {
-				f[i] = f[j] + 1
-				last[i] = sum[i] - sum[j]
-			}
-		}
-	}
-	return n - f[n]
-
-}

@@ -25,6 +25,7 @@ func (b *BinaryHeap) insert(val int) bool {
 	// 先放入末尾
 	b.heap[b.tail] = val
 	b.tail++
+	return true
 }
 
 func (b *BinaryHeap) maxHeap() int {
